@@ -1,5 +1,4 @@
 #!/bin/sh
-COLOR="#e7dc6d"
 STATE=$(pamixer --get-mute)
 VOL=$(pamixer --get-volume)
 
@@ -13,4 +12,5 @@ else
     ICON=""
 fi
 
-printf "^c%s^%s %s%% " "$COLOR" "$ICON" "$VOL"
+COLOR="^c#f98700^"
+printf "%s%s %s%% " "$COLOR" "$ICON" "$VOL"

@@ -9,5 +9,6 @@ total=$((a+b+c+idle))
 cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
 
 icon=""
-printf "^c#4aa3b5^%s%s° " "$icon" "$cpu"
+COLOR="^c#c3cd8e^"
+printf "%s%s%2s%% " "$COLOR" "$icon" "$cpu"
 

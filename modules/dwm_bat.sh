@@ -19,4 +19,5 @@ else
     ICON=""
 fi
 
-echo -n "^c#ac7cff^$ICON  $BAT% "
+COLOR="^c#efbe31^"
+printf "%s%s  %s%% " "$COLOR" "$ICON" "$BAT"
