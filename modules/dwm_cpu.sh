@@ -8,7 +8,8 @@ read -r cpu a b c idle rest < /proc/stat
 total=$((a+b+c+idle))
 cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
 
-icon=""
+#icon=""
+icon=""
 COLOR="^c#c3cd8e^"
-printf "%s%s%2s%% " "$COLOR" "$icon" "$cpu"
+printf "%s%s %2s%% " "$COLOR" "$icon" "$cpu"
 
